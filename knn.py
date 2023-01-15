@@ -13,10 +13,6 @@ y = dataset.iloc[:, 1].values
 # train test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 
-#
-#
-#
-
 X_train = X_train.reshape(-1, 1)
 X_test = X_test.reshape(-1, 1)
 
@@ -34,6 +30,3 @@ confusion = cm[0][1] + cm[1][0]
 
 ratio = (total - confusion) * 100 / total 
 print("{:.2f}".format(ratio))
-#print(cm)
-#print(confusion)
-#print(total)
